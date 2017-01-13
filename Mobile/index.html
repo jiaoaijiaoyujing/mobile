@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>外卖平台</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/index.css">
+	<!-- 引入css的轮播图的样式表 swipe -->
+	<link rel="stylesheet" href="css/swipe.css">
+	<script src="script/zepto.js"></script>
+	<script src="script/rem.js"></script>
+</head>
+<body>
+
+	<div id="address" class="section">
+		<div class="rl-header">
+			<span class="ind-tit add-tit">
+				<h3> < </h3>
+				<h2 class="city-name"><a href="#citylist" id="changescity">上海</a></h2>
+				<h3>切换城市</h3>
+			</span>
+		</div>
+		
+		
+		<div>
+			<input type="text" id="keyword">
+		</div>
+		
+		<button id="query">饿了么搜索</button><button id="baidu">百度搜索</button>
+		<ul id="list"></ul>
+	</div>
+	<div id="citylist" class="section">
+	<!-- <a href="#rlist">城市选择页</a> -->
+		<div class="rl-header">
+			<span class="cili-tit">
+				<h1>ele.me&nbsp;|&nbsp;百度外卖</h1>
+				<h2>登录|注册</h2>
+			</span>
+		</div>
+		
+		<h2 class="ci-na-pos">当前定位城市：<a href="#address" id="city"></a></h2>
+		<p>热门城市</p>
+		<div class="hotcity" id="hotcity">
+			<!-- <a href="javascript:;"></a>
+			<a href="javascript:;"></a>
+			<a href="javascript:;"></a>
+			<a href="javascript:;"></a>
+			<a href="javascript:;"></a>
+			<a href="javascript:;"></a>
+			<a href="javascript:;"></a> -->
+		</div>
+		<h2 class="city-first">城市首字母排序</h2>
+		<div class="louti">
+			<!-- <a href="javascript:;"></a> -->
+		</div>
+		<div class="All-wrap">
+			<!-- <div class="letter_wrap">
+				<p class="letters">A(按字母排序)</p>
+				<div class="hotcity" id="lettercity">
+					<a href="javascript:;"></a>
+				</div>
+			</div> -->
+
+		</div>
+		
+		
+		
+	</div>
+	<div id="rlist" class="section">
+		<div class="rl-header">
+			<span>
+				
+			</span>
+		</div>
+
+		<div class="cont">
+
+			<div class="scroll">
+			<!-- 轮播图开始 -->
+				<div class="swipe" id="mySwipe">
+					<div class="swipe-wrap">
+					    <div class="item item1" style="height:200px;">
+
+					    	<!-- <a href="javascript:;" class="ban-wrap">
+					    		<div class="imgcont">
+					    			<img src="//fuss10.elemecdn.com/b/7e/d1890cf73ae6f2adb97caa39de7fcjpeg.jpeg?imageMogr/format/webp/" alt="">
+					    		</div>
+					    		<p>美食</p>
+					    	</a> -->
+
+					    </div>
+					    <div class="item item2" style="height:200px;">
+					       
+					    </div>
+					    <!-- <div class="item"  style="background: black;height: 200px">
+					        滑动的第三个版块
+					        
+					    </div> -->
+					</div>
+					<ul id="position" class="hidden">
+					    <li class="cur"></li>
+					    <li style="margin-left:-5px"></li>
+					   <!--  <li style="margin-left:-5px"></li> -->
+					</ul>
+				</div>
+				<!-- 轮播图结束 -->
+				<!-- <div class="banner">
+					<div class="bannerWrap">
+						<div class="swipe-item first"></div>
+						<div class="swipe-item second"></div>
+					</div>
+					<div class="mark">
+						<span class="mFirst"></span><span class="mSecond"></span>
+					</div>
+				</div> -->
+				
+
+				<h3 class="index-title"> 
+					<span>附近商家</span> 
+				</h3>
+				<div class="list-wrap">
+					<!-- <div class="img-wrap">	
+					</div>
+					<div>
+						<ul class="res-list"></ul>
+						<div class="peisong">15元起送/免费配送</div>
+					</div> -->
+				</div>
+				
+			</div>
+		</div>
+
+	</div>
+	<div id="detail" class="section">
+	<!-- <a href="#address">餐厅详情页</a> -->
+	<div class="detail-wrap">
+		<div class="top-wrap">
+			<div class="header">
+				<div class="headzhezhao">
+				
+				</div>
+			</div>
+			<div class="tab-nav">
+				<a href="javascript:;" class="tab-nav-left tab-nav-con">
+					<span>商品</span>
+				</a>
+				<a href="javascript:;" class="tab-nav-right tab-nav-con">
+					<span>商家</span>
+				</a>
+			</div>
+		</div>
+			<div class="foods-content">
+				<div class="cont-left">
+					<ul class="navlist">
+						<!-- <li>优惠</li>
+						<li>优惠</li>
+						<li>优惠</li>
+						<li>优惠</li>
+						<li>优惠</li>
+						<li>优惠</li>
+						<li>优惠</li>
+						<li>优惠</li>
+						<li>优惠</li>
+						 -->
+					</ul>
+				</div>
+				<div class="cont-right">
+					<div class="foodlist">
+						<!--<div class="food-item">
+							<h2>热销榜</h2>
+							
+								<div class="food-info">
+									<span class="img-info">
+										<img src="//fuss10.elemecdn.com/a/dd/b15e88f3ab2cec9e518609655d50ejpeg.jpeg?imageMogr/thumbnail/140x140/format/webp/quality/85" alt="">
+									</span>
+									<div class="food-detail">
+										<h3>食物名字</h3>
+										<p>介绍</p>
+										<p>限几份</p>
+										<div>
+											<span class="price">23<span class="spice">39</span></span>
+											<span class="num-area">
+												<span class="minus">-</span>
+												<span class="num">0</span>
+												<span class="plus">+</span>
+											</span>
+										</div>
+										
+									</div>
+								</div>
+							
+							</div> -->
+
+					
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+			<div class="carmessage">
+				<div class="carmessage-wrap">
+					<div class="carmessage-top">
+						<div class="carme-left"><span></span>购物车</div>
+						<div class="carme-right"><span class="rabish"></span>清空</div>
+					</div>
+					<div class="carmessage-bot">
+						<h3>红葡萄酒</h3>
+						<div class="carmesbot-right">
+							<b class="fuhao">￥</b>
+							<span class="price">10.5</span>
+							<span class="num-area">
+								<span class="minus">-</span>
+								<span class="num">0</span>
+								<span class="plus">+</span>
+							</span>
+						</div>
+					</div>
+					<div class="carmessage-bot">
+						<h3>红葡萄酒</h3>
+						<div class="carmesbot-right">
+							<b class="fuhao">￥</b>
+							<span class="price">10.5</span>
+							<span class="num-area">
+								<span class="minus">-</span>
+								<span class="num">0</span>
+								<span class="plus">+</span>
+							</span>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="shopcar">
+				<div class="shopcar-wrap">
+					<div class="shopcar-bg">
+						<span class="car"></span>
+						<span class="carhuiimg"></span>
+						<span class="carlanimg"></span>
+						<span class="carnum">1</span>
+						<div class="information">
+							<div class="carstatements"><span>￥</span><span class="carprice">0</span></div>
+							<p class="cardeliver">再买￥<span class="deliver">0</span>免配送费</p>
+						</div>
+						<a href="javascript:;" class="settlement">去结算</a>
+					</div>
+				</div>
+			</div>
+
+	</div>
+
+
+
+
+
+
+
+	<script src="script/swipe.js"></script>
+	<script src="script/iscroll.js"></script>
+	<script src="script/module/addressObj.js"></script>
+	<script src="script/module/citylistObj.js"></script>
+	<script src="script/module/rlistObj.js"></script>
+	<script src="script/module/detailObj.js"></script>
+	<script src="script/indexwaimai.js"></script>
+</body>
+</html>
